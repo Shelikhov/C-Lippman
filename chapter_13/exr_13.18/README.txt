@@ -1,0 +1,1 @@
+Operator delete in class.
