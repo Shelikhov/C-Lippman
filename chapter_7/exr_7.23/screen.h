@@ -10,6 +10,7 @@ using namespace std;
 class Screen{
 public:
     Screen() = default;
+    Screen(string::size_type, string::size_type);
     Screen(string::size_type, string::size_type, char);
     char &get();//To get cursor value.
     char &get(string::size_type r, string::size_type c);//To get value in the specified coordinates (r is row, c is column).
