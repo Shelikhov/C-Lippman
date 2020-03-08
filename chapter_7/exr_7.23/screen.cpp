@@ -18,10 +18,10 @@ char &Screen::get(string::size_type r, string::size_type c){
     return content[cursor];
 }
 
-void Screen::move(string::size_type r, string::size_type c){
+Screen &Screen::move(string::size_type r, string::size_type c){
     string::size_type row = r * width;
     cursor = row + c;
-    return;
+    return *this;
 }
 
 void Screen::showWin(ostream &threadOut){
