@@ -24,12 +24,17 @@ Screen &Screen::move(string::size_type r, string::size_type c){
     return *this;
 }
 
-void Screen::showWin(ostream &threadOut){
-    obj.printOut(threadOut, content);
-    return;
+Screen &Screen::showWin(ostream &threadOut){
+    doShowWin(threadOut);
+    return *this;
 }
 
-void Screen::insert(string & str){
+const Screen &Screen::showWin(ostream &threadOut) const{
+    doShowWin(threadOut);
+    return *this;
+}
+
+Screen &Screen::insert(string & str){
     for( char ch : str){
         if(cursor != content.size()){
             content[cursor] = ch;
@@ -38,4 +43,10 @@ void Screen::insert(string & str){
         }
         ++cursor;
     }
+    return *this;
+}
+
+void Screen::doShowWin(ostream &threadOut) const{
+    threadOut << content << endl;
+    return;
 }
