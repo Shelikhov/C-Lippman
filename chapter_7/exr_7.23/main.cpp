@@ -13,7 +13,7 @@ int main(){
     string word;
     getline(cin, word);
 
-    myWin.insert(word);//To write text in the window.
+    myWin.move(2, 7).insert(word);//To write text in the window.
     
     myWin.showWin(cout);
     cout << myWin.get();
