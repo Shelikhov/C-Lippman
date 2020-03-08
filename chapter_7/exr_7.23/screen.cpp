@@ -1,5 +1,9 @@
 #include "screen.h"
 
+Screen::Screen(string::size_type val1, string::size_type val2):
+    height(val1), width(val2), content(height * width, ' '), cursor(0){
+}
+
 Screen::Screen(string::size_type val1, string::size_type val2, char symbol):
     height(val1), width(val2), content(height * width, symbol), cursor(0){
 }
