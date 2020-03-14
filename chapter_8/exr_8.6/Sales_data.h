@@ -14,9 +14,9 @@ public:
     Sales_data(string, int);
     Sales_data(string, int, double);
     Sales_data(istream &);
-    string &retName(Sales_data &);
-    int &retCount(Sales_data &);
-    double &retCost(Sales_data &);
+    string &retName();
+    int &retCount();
+    double &retCost();
     void add();
     void add(int &val);
 private:

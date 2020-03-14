@@ -1,4 +1,4 @@
-#include "sales_data.h"
+#include "Sales_data.h"
 
 Sales_data::Sales_data(string str):name(str), count(1), cost(0){
 }
@@ -15,16 +15,16 @@ Sales_data::Sales_data(istream &threadIn){
     objRead.readIn(threadIn, this->cost);
 }
 
-string &Sales_data::retName(Sales_data &obj){
-    return obj.name;
+string &Sales_data::retName(){
+    return this->name;
 }
 
-int &Sales_data::retCount(Sales_data &obj){
-    return obj.count;
+int &Sales_data::retCount(){
+    return this->count;
 }
 
-double &Sales_data::retCost(Sales_data &obj){
-    return obj.cost;
+double &Sales_data::retCost(){
+    return this->cost;
 }
 
 void Sales_data::add(){
