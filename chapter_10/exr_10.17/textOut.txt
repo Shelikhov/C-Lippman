@@ -1,0 +1,25 @@
+Name:	book1,	number:	2,	cost:	0
+Name:	book2,	number:	3,	cost:	0
+Name:	book3,	number:	1,	cost:	0
+Name:	book4,	number:	1,	cost:	0
+Name:	,	number:	2,	cost:	0
+Name:	book1,	number:	2,	cost:	0
+Name:	book2,	number:	3,	cost:	0
+Name:	book3,	number:	1,	cost:	0
+Name:	book4,	number:	1,	cost:	0
+Name:	,	number:	2,	cost:	0
+Name:	book5,	number:	1,	cost:	0
+Name:	book7,	number:	1,	cost:	0
+Name:	book3,	number:	1,	cost:	0
+Name:	book2,	number:	2,	cost:	0
+Name:	book1,	number:	1,	cost:	0
+Name:	book4,	number:	1,	cost:	0
+Name:	,	number:	2,	cost:	0
+Name:	,	number:	2,	cost:	0
+Name:	book1,	number:	1,	cost:	0
+Name:	book2,	number:	2,	cost:	0
+Name:	book3,	number:	1,	cost:	0
+Name:	book4,	number:	1,	cost:	0
+Name:	book5,	number:	1,	cost:	0
+Name:	book7,	number:	1,	cost:	0
+
