@@ -17,7 +17,7 @@ int main(){
 	fileIn.open("textIn.txt", ifstream::in);
 	string str;
 
-	while(!fileIn.eof()){
+	while(!fileIn.eof()){//To read all isbns from file to vector.
 		getline(fileIn, str);
 		vector<Sales_data>::iterator it = vec.begin();
 		for(; it != vec.end(); ++it){
@@ -34,7 +34,7 @@ int main(){
 
 	fileIn.close();
 
-	sort(vec.begin(), vec.end(), compareIsbn);
+	sort(vec.begin(), vec.end(), compareIsbn);//To sort all isbns in vector.
 	for(Sales_data obj : vec){
 		cout << obj.retName() << "\n";
 	}
@@ -43,7 +43,7 @@ int main(){
 	fileOut.open("textOut.txt", ofstream::out | ofstream::app);
 
 
-	for(vector<Sales_data>::iterator it = vec.begin(); it != vec.end(); ++it){
+	for(vector<Sales_data>::iterator it = vec.begin(); it != vec.end(); ++it){//To put all isbns from vector to output file in sorted view.
 		fileOut << "Name:\t" << it->retName() << ",\tnumber:\t" << it->retCount() << ",\tcost:\t" << it->retCost() << "\n";
 	}
 	fileOut.close();
