@@ -6,6 +6,7 @@
 #include<iterator>
 #include<fstream>
 #include<sstream>
+#include<utility>
 
 using namespace std;
 
@@ -25,7 +26,7 @@ int main(){
         }
     }
 
-    for(auto &el : wordLocation){//To show map.
+    for(const pair<string, vector<int>> &el : wordLocation){//To show map.
         cout << el.first << "\t";
         for_each(el.second.begin(), el.second.end(), [](int val){cout << val << "\t";});
         cout << "\n";
