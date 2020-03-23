@@ -1,19 +1,25 @@
-#include <iostream>
-#include <string>
-#include <utility>
-#include <vector>
+#include<iostream>
+#include<vector>
+#include<utility>
+#include<fstream>
+#include<sstream>
 
-std::pair<std::string, int> process(std::vector<std::string> &v){
-	return {v.front(), v.front().size()};
-}
+using namespace std;
 
 int main(){
+    string line, word, num;
+    vector<pair<string, int>> vec;
+    ifstream file("file_name");
+	
+    while(!file.eof()){//To read data from file to vector as pair elements.
+        getline(file, line);
+        istringstream strStream(line);
+        strStream >> word >> num;
+        int n = stoi(num);
+        vec.push_back(make_pair(word, n));
+    }
 
-	std::string input;
-	std::vector<std::string> vec1;
-	std::cin >> input;
-	vec1.push_back(input);
-	auto test = process(vec1);	
-	std::cout << test.first << " " << test.second << std::endl;
-	return 0;
+    for(pair<string, int> &el : vec)//To show vector.
+        cout << el.first << "****" << el.second << endl;
 }
+
