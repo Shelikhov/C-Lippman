@@ -12,6 +12,7 @@ Hasptr &Hasptr::operator=(const Hasptr &obj){
 }
 
 Hasptr::~Hasptr(){
+    delete val2;
     cout << "Object deleted!\n";
 }
 
