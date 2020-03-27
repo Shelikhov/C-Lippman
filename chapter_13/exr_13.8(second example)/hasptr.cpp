@@ -9,6 +9,7 @@ Hasptr::Hasptr(int val, const string &str = string()): val1(val), val2(new strin
 Hasptr &Hasptr::operator=(const Hasptr &obj){
     val1 = obj.val1;
     val2 = new string(*(obj.val2));
+    return *this;
 }
 
 void Hasptr::print(){
