@@ -6,6 +6,7 @@ Employee::Employee(Employee &obj): name(obj.name), id(++obj.statVal){
 Employee& Employee::operator=(Employee &obj){
     name = obj.name;
     id = ++obj.statVal;
+    return *this;
 }
 
 Employee::Employee(): name("undefined"), id(++statVal){
