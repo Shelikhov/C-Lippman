@@ -8,7 +8,7 @@
 using namespace std;
 
 int main(){
-    ifstream file("C:/Users/yashelik/Documents/file_read.txt");
+    ifstream file("file_name");
     size_t beg = 1, end = 5;
     size_t count = 0;
     string line, word;
