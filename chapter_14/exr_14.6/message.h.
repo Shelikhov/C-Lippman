@@ -10,8 +10,10 @@ class Folder;
 
 class Message{
 public:
-    friend ostream &operator<<(ostream &threadOut, Message &mes);
+    friend ostream &operator<<(ostream &, Message &);
+    friend istream &operator>>(istream &, Message &);
     friend class Folder;
+    Message() = default;
     Message(string str);
     Message(const Message &);
     Message &operator=(const Message &);
